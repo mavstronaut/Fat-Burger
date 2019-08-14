@@ -7,9 +7,3 @@ Eat-da-Burger
 
 
 ### Instructions
-
-#### View setup
-
-* Setup the `index.handlebars` to have the template that Handlebars can render onto.
-
-* Create a button in `index.handlebars` that will submit the user input into the database.

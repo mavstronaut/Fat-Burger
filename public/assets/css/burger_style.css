@@ -1,6 +1,86 @@
+html {
+    background-color: rgb(199, 182, 106);
+}
 
-/* font-family: 'Fjalla One', sans-serif; */
+body {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(79, 73, 47);
+}
+
 #comic {
     width: 75%;
     height: auto;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+}
+
+.burgerAvailable {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: cornsilk;
+    border: none;
+}
+
+.burgerAvailable:hover {
+    background-color: chocolate;
+}
+
+.burgerEaten {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color: cornsilk;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 42px;
+    margin: 50px;
+}
+
+.formContainer {
+    background-color: goldenrod;
+}
+
+.addBurgerButton {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: chocolate;
+    border: none;
+}
+
+.addBurgerButton:active {
+    background-color: cornsilk; 
+}
+
+.burgerFooter {
+    background-color: cornsilk;
 }
