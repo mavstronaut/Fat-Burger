@@ -1,6 +1,6 @@
-const burger = require('./burger.js');
-const connection = require('../config/connection.js');
-const newLine = '\n\n';
+var burger = require('./burger.js');
+var connection = require('../config/connection.js');
+var newLine = '\n\n';
 
 burger.selectAll(function(data) {
     console.log('burger selectAll test' + newLine);

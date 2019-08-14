@@ -1,13 +1,13 @@
-const express = require('express');
-const router = express.Router();
-const burger = require('../models/burger.js');
+var express = require('express');
+var router = express.Router();
+var burger = require('../models/burger.js');
 
 router.get('/', function(req, res) {
     burger.selectAll(function(data) {
-        const hbsOjbect = {
+        var hbsOjbect = {
             burgers: data
         };
-        res.render('index', hbsObject);
+        res.render('index', hbsOjbect);
     });
 });
 
@@ -18,7 +18,7 @@ router.post('/burgers', function(req, res) {
 });
 
 router.put('/burgers:id', function(req, res) {
-    const condition = 'id = ' + req.params.id;
+    var condition = 'id = ' + req.params.id;
 
     burger.updateOne({
         devoured: true

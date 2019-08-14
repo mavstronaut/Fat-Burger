@@ -6,4 +6,5 @@ Eat-da-Burger
 * [Live Link](https://fat-burger.herokuapp.com/)
 
 
-### Instructions
+### Overview
+This restaurant application is a "build your own burger"

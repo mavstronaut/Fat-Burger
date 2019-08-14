@@ -1,7 +1,7 @@
-const orm = require('./orm.js');
-const connection = require('./connection.js');
+var orm = require('./orm.js');
+var connection = require('./connection.js');
 
-const newLine = '\n\n'
+var newLine = '\n\n'
 
 orm.selectAll('burgers', function (data) {
     console.log('__orm testing menu__' + newLine);
