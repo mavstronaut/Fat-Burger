@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 const connection;
-
+const newLine = '\n\n'
 
 if (process.env.JAWSDB_URL) { 
     // heroku database
@@ -12,16 +12,16 @@ if (process.env.JAWSDB_URL) {
         host: 'localhost',
         user: 'root',
         password: 'lakota',
-        database: 'burgers_db'
+        database: 'burger_db'
     });
 };
 
 connection.connect(function(err) {
     if (err) {
-        console.error('ERROR: MySQL connection error -- ' + err.stack + '\n\n');
+        console.error('ERROR: MySQL connection error -- ' + err.stack + newLine);
         return;
     }
-    console.log('Connected to MySQL database as id ' + connection.threadId + '\n\n');
+    console.log('Connected to MySQL database as id ' + connection.threadId + newLine);
 });
 
 module.exports = connection;
