@@ -10,13 +10,7 @@ Eat-da-Burger
 
 #### Config Setup
 
-1. Create a `connection.js` file inside `config` directory.
-
-   * Inside the `connection.js` file, setup the code to connect Node to MySQL.
-
-   * Export the connection.
-
-2. Create an `orm.js` file inside `config` directory.
+1. Create an `orm.js` file inside `config` directory.
 
    * Import (require) `connection.js` into `orm.js`
 
