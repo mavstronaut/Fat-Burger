@@ -1,0 +1,43 @@
+<h1>Send Order</h1>
+
+<div class="row">
+    <div class="col s12">
+        <form action="/burgers" method="POST">
+            <input type="text" id="name" name="burger_name" placeholder="Order What You Want">
+            <button type="submit" class="addBurgerButton">Prepare Meal</button>
+        </form>
+    </div>
+</div>
+
+<h2>Order Up</h2>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s6">
+                {{#each burgers}}
+                    {{#unless this.devoured}}
+                        <div>
+                            <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                                <button type="submit" class="burgerAvailable"> {{this.burger_name}}</button>
+                            </form>
+                        </div>          
+                    {{/unless}}
+                {{/each}}
+            </div> 
+
+            <div class="col s6">
+                {{#each burgers}}
+                    {{#if this.devoured}}
+                        <div class="burgerEaten">
+                            <div>
+                                {{this.burger_name}}
+                            </div>
+                        </div>
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</main>
+
