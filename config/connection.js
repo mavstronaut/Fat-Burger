@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 var connection;
-var newLine = '\n\n'
+var newLine = '\n\n';
 
 if (process.env.JAWSDB_URL) { 
     // heroku database
