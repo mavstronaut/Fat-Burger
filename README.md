@@ -3,7 +3,8 @@ Eat-da-Burger
 
 ## Demo
 * [How it works](https://youtu.be/msvdn95x9OM).
-* [Live Link]()
+* [Live Link](https://fat-burger.herokuapp.com/)
 
 
-### Instructions
+### Overview
+This restaurant application is a "build your own burger"

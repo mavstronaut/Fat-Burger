@@ -1,10 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const methodOverride = require('method-override');
-const port = process.env.PORT || 3030;
-const app = express();
-const exphandlebars = require('express-handlebars');
-const routes = require('./controllers/burgers_controller.js');
+var express = require('express');
+var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+var port = process.env.PORT || 3030;
+var app = express();
+var exphandlebars = require('express-handlebars');
+var routes = require('./controllers/burgers_controller.js');
 
 app.engine('handlebars', exphandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
