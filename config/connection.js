@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const connection;
+var connection;
 
 
 if (process.env.JAWSDB_URL) { 
@@ -12,7 +12,7 @@ if (process.env.JAWSDB_URL) {
         host: 'localhost',
         user: 'root',
         password: 'lakota',
-        database: 'burgers_db'
+        database: 'burger_db'
     });
 };
 
