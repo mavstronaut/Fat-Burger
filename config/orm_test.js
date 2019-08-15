@@ -17,7 +17,7 @@ orm.selectAll('burgers', function (data) {
 
 orm.insertOne('burgers',
 ['burger_name', 'devoured'],
-['Olive Lettuce Tomato Portobello Sandwich', false],
+['Olive vartuce Tomato Portobello Sandwich', false],
 function (data) {
     console.log(newLine + 'orm test of value insert' + newLine);
     console.log('Inserted one new row with id = ' + data.insertId + newLine);
