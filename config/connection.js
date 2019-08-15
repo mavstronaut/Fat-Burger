@@ -4,7 +4,7 @@ var newLine = '\n\n';
 
 if (process.env.JAWSDB_URL) { 
     // heroku database
-    connecction = mysql.createConnection(process.env.JAWSDB_URL);
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     // running on localhost
     connection = mysql.createConnection({
