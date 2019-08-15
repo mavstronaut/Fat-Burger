@@ -1,7 +1,7 @@
 var connection = require('./connection.js');
 
 function printQuestionMarks(num) {
-    let arr = [];
+    var arr = [];
     for (var i = 0; i < num; i++) {
         arr.push("?");
     };
@@ -10,15 +10,16 @@ function printQuestionMarks(num) {
 };
 
 function objToSql(ob) {
-    let arr = [];
+    var arr = [];
     for (var key in ob) {
         arr.push(key + "=" + ob[key]);
     };
 
+    console.log(arr);
     return arr.toString();
 }
 
-let orm = {
+var orm = {
     selectAll: function(tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
 
@@ -30,7 +31,6 @@ let orm = {
             cb(result);
         });
     },
-
     insertOne: function(table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
 
@@ -51,12 +51,14 @@ let orm = {
             cb(result);
         });
     },
-
     updateOne: function(table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
 
+        console.log(objColVals);
+        console.log(objToSql(objColVals));
+        
         queryString += " SET ";
-        queryString += objToSql(objColVals); // 
+        queryString += objToSql(objColVals); // column value
         queryString += " WHERE ";
         queryString += condition; // id = #
 
