@@ -56,9 +56,9 @@ let orm = {
         var queryString = "UPDATE " + table;
 
         queryString += " SET ";
-        queryString += objToSql(objColVals);
+        queryString += objToSql(objColVals); // 
         queryString += " WHERE ";
-        queryString += condition;
+        queryString += condition; // id = #
 
         console.log(queryString);
 
